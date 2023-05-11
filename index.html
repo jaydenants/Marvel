@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        #man{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #art{
+            display:flex;
+            justify-content:center;
+            margin-top:100px;
+            width:600px;
+            height:500px;
+            background:linear-gradient( to bottom left , violet,#ff8f00  );
+            border-radius:20px;
+            
+        }
+        #im{
+            position:absolute;
+            transition:1.2s;
+        }
+        #dive{
+            color:white;
+            font-size:20px;
+            width:200px;
+            height:150px;
+            position:absolute;
+            opacity:0;
+            transition:1.2s;
+        }
+        #butt{
+            width:100px;
+            height:25px;
+            background-color:white;
+            border-style:none;
+            border-radius:15px
+        }
+        #art:hover div{
+            transition:1.2s;
+            opacity:1;
+            transform: translateX(-150px);
+        }
+        #art:hover img{
+            transition:1.2s;
+            transform: translateX(150px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <main id="man">
+        <article id="art">
+            <img id="im" src="./1.png">
+            <div id="dive">
+            <h1>Captain Marvel</h1>
+            <p id="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis enim doloribus nihil, amet quisquam fuga explicabo? Qui, consequatur exercitationem enim culpa quia inventore cumque iste assumenda sunt adipisci, modi tempora?
+                <br>
+            <button id="butt">press me!!</button></p>
+            </div>
+        </article>
+    </main>
+    
+</body>
+</html>
